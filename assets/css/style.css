@@ -129,17 +129,23 @@ header {
   width: 1rem;
 }
 
-/* exclusive section styles */
-
-.exclusive-section {
-  padding: 2rem 3rem;
+main {
+  margin: 0 3rem;
 }
-.exclusive-title {
+
+/* exclusive section & trending section styles */
+
+.exclusive-section,
+.trending-section {
+  padding: 2rem 0;
+}
+.sub-title {
   font-size: 2vw;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.795);
 }
-.exclusive-items {
+.exclusive-items,
+.trending-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -153,6 +159,13 @@ header {
   border-radius: 1rem;
   z-index: -1;
 }
+
+.trending-items section img {
+  width: 18rem;
+  margin: 1.5rem 0.7rem;
+  border-radius: 1rem;
+}
+
 .exclusive-items section span {
   position: absolute;
   top: 50%;
@@ -161,4 +174,42 @@ header {
   color: #fff;
   text-align: center;
   z-index: 20;
+}
+
+.trending-items section h3 {
+  margin: 0.2rem 0.7rem;
+  font-weight: 500;
+}
+
+/* cta section styles */
+
+.cta-section {
+  margin: 5rem 0;
+  background-image: linear-gradient(to right, #3f2321, transparent),
+    url("./../image/banner-2.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 5%;
+  color: #fff;
+}
+
+.cta-section h3 {
+  font-size: 4vw;
+  line-height: 5.3vw;
+  font-weight: 500;
+}
+
+.cta-section p {
+  font-size: 18px;
+  margin: 1rem 0;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #ff5361;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
 }
