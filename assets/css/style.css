@@ -128,3 +128,37 @@ header {
 .searchbar-submit-btn button img {
   width: 1rem;
 }
+
+/* exclusive section styles */
+
+.exclusive-section {
+  padding: 2rem 3rem;
+}
+.exclusive-title {
+  font-size: 2vw;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.795);
+}
+.exclusive-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.exclusive-items section {
+  position: relative;
+  margin: 1.5rem 0.7rem;
+}
+.exclusive-items section img {
+  width: 14rem;
+  border-radius: 1rem;
+  z-index: -1;
+}
+.exclusive-items section span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 20;
+}
