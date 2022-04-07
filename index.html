@@ -20,18 +20,25 @@
     <header class="header">
       <!-- header menu -->
       <nav class="navbar-container">
-        <section class="navbar-logo">
-          <img src="./assets/image/logo.png" alt="logo" />
+        <section class="navbar-row">
+          <section class="navbar-logo">
+            <img src="./assets/image/logo.png" alt="logo" />
+          </section>
+          <section class="menu-burger-btn">
+            <i class="fa fa-bars"></i>
+          </section>
         </section>
-        <section class="navbar-menu">
-          <ul>
-            <li><a href="#">Popular Places</a></li>
-            <li><a href="#">Travel Outside</a></li>
-            <li><a href="#">Online Packages</a></li>
-          </ul>
-        </section>
-        <section class="navbar-register-btn">
-          <a href="#">Register Now</a>
+        <section class="navbar-row menu-burger d-none">
+          <section class="navbar-menu">
+            <ul>
+              <li><a href="#">Popular Places</a></li>
+              <li><a href="#">Travel Outside</a></li>
+              <li><a href="#">Online Packages</a></li>
+            </ul>
+          </section>
+          <section class="navbar-register-btn">
+            <a href="#">Register Now</a>
+          </section>
         </section>
       </nav>
 
@@ -43,15 +50,15 @@
         </section>
         <section class="searchbar-form">
           <form action="">
-            <section class="search-input border-right">
+            <section class="search-input search-border">
               <label>Location</label>
               <input type="text" placeholder="Where are you going?" />
             </section>
-            <section class="search-input border-right">
+            <section class="search-input search-border">
               <label>Check in</label>
               <input type="text" placeholder="Add Dates" />
             </section>
-            <section class="search-input border-right">
+            <section class="search-input search-border">
               <label>Check out</label>
               <input type="text" placeholder="Add Dates" />
             </section>

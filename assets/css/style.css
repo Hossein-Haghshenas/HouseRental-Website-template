@@ -45,6 +45,11 @@ header {
   padding: 1rem 2rem;
 }
 
+.navbar-row {
+  display: flex;
+  align-items: center;
+}
+
 .navbar-logo img {
   width: 10rem;
 }
@@ -78,6 +83,10 @@ header {
   font-weight: 500;
 }
 
+.menu-burger-btn {
+  display: none;
+}
+
 /* header searchBar style */
 
 .header-searchbar {
@@ -105,17 +114,17 @@ header {
   margin-left: 1.5rem;
 }
 .search-input {
-  width: 9rem;
+  width: 8rem;
 }
 .search-input:first-of-type {
-  width: 13rem;
+  width: 12rem;
 }
 .searchbar-form form section label {
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-.border-right {
+.search-border {
   border-right: 1px solid rgba(112, 112, 112, 0.486);
 }
 .searchbar-submit-btn button {
@@ -290,4 +299,95 @@ footer a {
 }
 .footer-copyright {
   margin: 1rem 0;
+}
+
+/* make responsive */
+
+@media only screen and (max-width: 800px) {
+  .navbar-container {
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    background: #000;
+    z-index: 1000;
+  }
+
+  .navbar-row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .navbar-row:nth-child(2) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .d-none {
+    display: none;
+  }
+
+  .navbar-menu ul {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-menu ul li {
+    margin: 10px 0;
+    display: block;
+  }
+
+  .navbar-register-btn {
+    margin: 1rem 1rem 5px 0;
+  }
+
+  .menu-burger-btn {
+    display: block;
+    font-size: 1.3rem;
+    color: #fff;
+  }
+
+  .header-searchbar {
+    margin: 1%;
+  }
+
+  .searchbar-title h1 {
+    font-size: 5vw;
+    padding-top: 6rem;
+  }
+  .searchbar-form form {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.4rem;
+  }
+  .search-border {
+    border-right: none;
+    border-bottom: 1px solid rgba(102, 102, 102, 0.616);
+  }
+  .search-input {
+    width: 78% !important;
+    margin: 0.1rem;
+    padding: 0.3rem;
+  }
+  .searchbar-form form section label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.2rem 0;
+  }
+  .searchbar-submit-btn button {
+    position: absolute;
+    left: 40%;
+    bottom: -15%;
+    padding: 1rem;
+    border-radius: 50%;
+  }
+  .sub-title {
+    font-size: 5vw;
+  }
 }
