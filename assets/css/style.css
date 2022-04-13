@@ -420,3 +420,20 @@ footer a {
 .navbar-white .navbar-menu ul li:first-child:before {
   background: #ff5361;
 }
+
+.lists-container {
+  margin: 2rem 5rem;
+}
+.lists {
+  width: 100%;
+}
+.house-list {
+  width: 70%;
+}
+.house-list-title {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgb(121, 121, 121);
+}
+.filters-list {
+  width: 30%;
+}
