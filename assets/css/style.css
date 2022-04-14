@@ -539,3 +539,33 @@ footer a {
   padding: 0.4rem 0.8rem;
   border-radius: 1rem;
 }
+
+/* pagination styles */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.pagination img {
+  width: 0.8rem;
+  margin: 0.7rem 1.1rem;
+}
+.pagination span {
+  margin: 0.7rem 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pagination .current {
+  background: #333333;
+  color: #fff;
+}
+
+.right-arrow {
+  transform: rotate(180deg);
+}
